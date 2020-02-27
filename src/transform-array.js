@@ -13,17 +13,17 @@ module.exports = function transform(arr) {
         return [];
     }  
    
-    if(arr.includes(DISCARD_NEXT_TXT)) 
-        discard_next(arr);
-
-    if(arr.includes(DISCARD_PREV_TXT))
-        discard_prev(arr);
-
     if(arr.includes(DOUBLE_NEXT_TXT)) 
         double_next(arr);
 
     if(arr.includes(DOUBLE_PREV_TXT))
         double_prev(arr); 
+
+    if(arr.includes(DISCARD_NEXT_TXT)) 
+        discard_next(arr);
+
+    if(arr.includes(DISCARD_PREV_TXT))
+        discard_prev(arr);
        
     return arr;
     };  
